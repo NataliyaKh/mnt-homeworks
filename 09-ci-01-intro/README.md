@@ -1,4 +1,4 @@
-# Домашнее задание к занятию 7 «Жизненный цикл ПО»
+# Домашнее задание к занятию 7 «Жизненный цикл ПО». Наталия Ханова.
 
 ## Подготовка к выполнению
 
@@ -30,10 +30,28 @@
 **Что нужно сделать**
 
 1. Создайте задачу с типом bug, попытайтесь провести его по всему workflow до Done. 
+
+![bug](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraBugHistory1.png)
+
 1. Создайте задачу с типом epic, к ней привяжите несколько задач с типом task, проведите их по всему workflow до Done. 
+
+![epic](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraEpicHistory1.png)
+
 1. При проведении обеих задач по статусам используйте kanban. 
+
+![kanban1](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraTasksOpen1.png)
+
+![kanban2](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraTasksDone.png)
+
 1. Верните задачи в статус Open.
 1. Перейдите в Scrum, запланируйте новый спринт, состоящий из задач эпика и одного бага, стартуйте спринт, проведите задачи до состояния Closed. Закройте спринт.
+
+![sprintBacklog](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraSprintStart.png)
+
+![sprintBoard](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraSprintFinalising.png)
+
+![sprintDetails](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraSprintStats.png)
+
 2. Если всё отработалось в рамках ожидания — выгрузите схемы workflow для импорта в XML. Файлы с workflow и скриншоты workflow приложите к решению задания.
 
 ---
@@ -43,3 +61,13 @@
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
 ---
+
+![workflows](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraWorkflows.png)
+
+![bugFlow](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraBugWorkflow.png)
+
+[BugFlow.xml](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/Bug%20flow.xml)
+
+![taskFlow](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/jiraTaskWorkflow.png)
+
+[TaskFlow.xml](https://github.com/NataliyaKh/mnt-homeworks/blob/main/09-ci-01-intro/Task%20flow.xml)
