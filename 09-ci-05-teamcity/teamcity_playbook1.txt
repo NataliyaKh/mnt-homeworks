@@ -1,0 +1,150 @@
+root@OVM:/home/vboxuser/git/mnt-homeworks/09-ci-05-teamcity/infrastructure# ansible-playbook -i inventory/cicd/hosts.yml site.yml
+
+
+
+PLAY [Get Nexus installed] *********************************************************************************************************
+
+
+
+TASK [Gathering Facts] *************************************************************************************************************
+
+[WARNING]: Platform linux on host nexus-01 is using the discovered Python interpreter at /usr/bin/python3.12, but future
+
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+ok: [nexus-01]
+
+
+
+TASK [Create Nexus group] **********************************************************************************************************
+
+ok: [nexus-01]
+
+
+
+TASK [Create Nexus user] ***********************************************************************************************************
+
+ok: [nexus-01]
+
+
+
+TASK [Install OpenJDK 8] ***********************************************************************************************************
+
+ok: [nexus-01]
+
+
+
+TASK [Create Nexus directories] ****************************************************************************************************
+
+ok: [nexus-01] => (item=/home/nexus/log)
+
+ok: [nexus-01] => (item=/home/nexus/sonatype-work/nexus3)
+
+ok: [nexus-01] => (item=/home/nexus/sonatype-work/nexus3/etc)
+
+ok: [nexus-01] => (item=/home/nexus/pkg)
+
+ok: [nexus-01] => (item=/home/nexus/tmp)
+
+
+
+TASK [Download Nexus] **************************************************************************************************************
+
+[WARNING]: Using world-readable permissions for temporary files Ansible needs to create when becoming an unprivileged user. This
+
+may be insecure. For information on securing this, see https://docs.ansible.com/ansible-
+
+core/2.17/playbook_guide/playbooks_privilege_escalation.html#risks-of-becoming-an-unprivileged-user
+
+[WARNING]: Module remote_tmp /home/nexus/.ansible/tmp did not exist and was created with a mode of 0700, this may cause issues when
+
+running as another user. To avoid this, create the remote_tmp dir with the correct permissions manually
+
+changed: [nexus-01]
+
+
+
+TASK [Unpack Nexus] ****************************************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Link to Nexus Directory] *****************************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Add NEXUS_HOME for Nexus user] ***********************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Add run_as_user to Nexus.rc] *************************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Raise nofile limit for Nexus user] *******************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Create Nexus service for SystemD] ********************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Ensure Nexus service is enabled for SystemD] *********************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Create Nexus vmoptions] ******************************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Create Nexus properties] *****************************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Lower Nexus disk space threshold] ********************************************************************************************
+
+skipping: [nexus-01]
+
+
+
+TASK [Start Nexus service if enabled] **********************************************************************************************
+
+changed: [nexus-01]
+
+
+
+TASK [Ensure Nexus service is restarted] *******************************************************************************************
+
+skipping: [nexus-01]
+
+
+
+TASK [Wait for Nexus port if started] **********************************************************************************************
+
+ok: [nexus-01]
+
+
+
+PLAY RECAP *************************************************************************************************************************
+
+nexus-01                   : ok=17   changed=11   unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+
