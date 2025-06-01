@@ -1,4 +1,4 @@
-# Домашнее задание к занятию 6 «Создание собственных модулей»
+# Домашнее задание к занятию 6 «Создание собственных модулей». Наталия Ханова. 
 
 ## Подготовка к выполнению
 
@@ -166,9 +166,13 @@ if __name__ == '__main__':
 
 **Шаг 6.** Проверьте через playbook на идемпотентность.
 
+![playbook](https://github.com/NataliyaKh/mnt-homeworks/blob/main/08-ansible-06-module/ansible-6_5-6_playbook.png)
+
 **Шаг 7.** Выйдите из виртуального окружения.
 
 **Шаг 8.** Инициализируйте новую collection: `ansible-galaxy collection init my_own_namespace.yandex_cloud_elk`.
+
+![elk]()
 
 **Шаг 9.** В эту collection перенесите свой module в соответствующую директорию.
 
