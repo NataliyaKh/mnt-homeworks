@@ -172,8 +172,6 @@ if __name__ == '__main__':
 
 **Шаг 8.** Инициализируйте новую collection: `ansible-galaxy collection init my_own_namespace.yandex_cloud_elk`.
 
-![elk](https://github.com/NataliyaKh/mnt-homeworks/blob/main/08-ansible-06-module/ansible-6_8_init.png)
-
 **Шаг 9.** В эту collection перенесите свой module в соответствующую директорию.
 
 **Шаг 10.** Single task playbook преобразуйте в single task role и перенесите в collection. У role должны быть default всех параметров module.
