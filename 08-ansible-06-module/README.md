@@ -172,7 +172,7 @@ if __name__ == '__main__':
 
 **Шаг 8.** Инициализируйте новую collection: `ansible-galaxy collection init my_own_namespace.yandex_cloud_elk`.
 
-![elk]()
+![elk](https://github.com/NataliyaKh/mnt-homeworks/blob/main/08-ansible-06-module/ansible-6_8_init.png)
 
 **Шаг 9.** В эту collection перенесите свой module в соответствующую директорию.
 
@@ -190,7 +190,13 @@ if __name__ == '__main__':
 
 **Шаг 16.** Запустите playbook, убедитесь, что он работает.
 
+![module](https://github.com/NataliyaKh/mnt-homeworks/blob/main/08-ansible-06-module/ansible-6_16_tarmodule.png)
+
 **Шаг 17.** В ответ необходимо прислать ссылки на collection и tar.gz архив, а также скриншоты выполнения пунктов 4, 6, 15 и 16.
+
+[Collection](https://github.com/NataliyaKh/my_own_collection)
+
+[my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz](https://github.com/NataliyaKh/my_own_collection/blob/main/my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz)
 
 ## Необязательная часть
 
