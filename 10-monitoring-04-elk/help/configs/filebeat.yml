@@ -12,6 +12,11 @@ processors:
       target: "json"
       overwrite_keys: true
 
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      hints.enabled: true
+
 output.logstash:
   hosts: ["logstash:5046"]
   protocol: tcp
