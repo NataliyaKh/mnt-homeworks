@@ -58,7 +58,7 @@ Filebeat следует сконфигурировать для отправки
 
 Перейдите в меню просмотра логов в kibana (Discover) и самостоятельно изучите, как отображаются логи и как производить поиск по логам.
 
-![kibana](https://github.com/NataliyaKh/mnt-homeworks/blob/main/10-monitoring-04-elk/elk_kibana1.png)
+![kibana](https://github.com/NataliyaKh/mnt-homeworks/blob/main/10-monitoring-04-elk/elk_kibana3.png)
 
 В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
