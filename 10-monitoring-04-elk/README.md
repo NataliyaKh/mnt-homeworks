@@ -50,6 +50,9 @@ Filebeat следует сконфигурировать для отправки
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
 
+Я использовала директорию help, но для выполнения поставленных в задании условий потребовалось изменить параметры [docker-compose.yml](https://github.com/NataliyaKh/mnt-homeworks/blob/main/10-monitoring-04-elk/help/docker-compose.yml) - в целях обеспечения логирования для some_application, [help/configs/filebeat.yml](https://github.com/NataliyaKh/mnt-homeworks/blob/main/10-monitoring-04-elk/help/configs/filebeat.yml) - для настройки отправки логов в logstash и [help/configs/logstash.conf](https://github.com/NataliyaKh/mnt-homeworks/blob/main/10-monitoring-04-elk/help/configs/logstash.conf) - для конфигурации приёма json-сообщений по tcp.
+(Мне кажется, описание условий сдачи задания содержит некоторые внутренние противоречия).
+
 ## Задание 2
 
 Перейдите в меню [создания index-patterns в kibana](http://localhost:5601/app/management/kibana/indexPatterns/create) и создайте несколько index-patterns из имеющихся.
